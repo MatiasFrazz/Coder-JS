@@ -13,6 +13,16 @@ footer {
 }
 
 /* Estilado index */
+
+header {
+  background-image: url("../img/fondo-arg.jpg");
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  
+  display: flex;
+  justify-content: center; 
+}
 .card{
   background-color: whitesmoke;
 
@@ -28,14 +38,10 @@ footer {
   border: 5px black double;
 }
 
-header {
-background-image: url("../img/fondo-arg.jpg");
-background-position: center;
-background-size: contain;
-background-attachment: fixed;
-
-  display: flex;
-  justify-content: center; 
+.btnProductos{
+  background-color: green;
+  font-size: medium;
+  font-weight: 900;
 }
 
 .hVel{

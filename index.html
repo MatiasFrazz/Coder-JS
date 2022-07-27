@@ -19,51 +19,154 @@
               </div> 
           </header> 
           
-        <main class="vel-uno">
-
+        <main>
+          <section class="vel-uno">
             <div class="card">
               <img src="img/acero.jpg" class="img-fluid"  alt="acero">
               <h2>Bombe sin Tapa</h2>
                 <h3>Envase de acero, 275ml</h3>
-                <button>Agregar al carrito</button>
+                <button class="btnProductos">Agregar al carrito</button>
             </div>
     
             <div class="card">
               <img src="img/dorada.jpg" class="img-fluid" alt="dorada">
               <h2>Acanalado</h2>
                 <h3>Lata acanalada, 200ml</h3>
-                <button>Agregar al carrito</button>
+                <button class="btnProductos">Agregar al carrito</button>
               </div>
               
               <div class="card">
                 <img src="img/vidrio.jpg" class="img-fluid"  alt="vidrio">
                 <h2>Dubai Bombe</h2>
                   <h3>Copon de vidrio, 200ml</h3>
-                  <button>Agregar al carrito</button>
+                  <button class="btnProductos">Agregar al carrito</button>
               </div>
                   
                 <div class="card">
                   <img src="img/vid-deco.jpg" class="img-fluid"  alt="vid-deco">
                   <h2>Caramelera N-4</h2>
                       <h3>Envase de vidrio decorado, 100ml</h3>
-                      <button>Agregar al carrito</button>
+                      <button class="btnProductos">Agregar al carrito</button>
                 </div>
 
               <div class="card">
                 <img src="img/rosa.jpg" class="img-fluid"  alt="rosa">
                 <h2>Conico Chico</h2>
                   <h3>Envase de metal conico, 95ml</h3>
-                  <button>Agregar al carrito</button>
+                  <button class="btnProductos">Agregar al carrito</button>
               </div>
 
 
 
-                      <div class="card">
-                        <img src="img/multicolor.jpg" class="img-fluid"  alt="multicolor">
-                        <h2>Concreto</h2>
-                          <h3>Concreto chico multicolor, 50ml</h3>
-                          <button>Agregar al carrito</button>
-                        </div>
+                <div class="card">
+                    <img src="img/multicolor.jpg" class="img-fluid"  alt="multicolor">
+                    <h2>Concreto</h2>
+                    <h3>Concreto chico multicolor, 50ml</h3>
+                    <button class="btnProductos">Agregar al carrito</button>
+                </div>
+              </section>
+
+              <section>
+                <form id="formCliente" action="">
+                  <div>
+                  <label for="">Ingrese su Nombre</label>
+                    <input type="text"  id="nombre">
+                  </div>
+
+                  <div>
+                  <label for="">Ingrese su Localidad</label>
+                    <input type="text" id="localidad">
+                  </div>
+
+                  <div>
+                  <label for="">Ingrese su Codigo Postal</label>
+                    <input type="number" id="codigoPostal">
+                  </div>
+
+                  <div>
+                  <input type="submit" value="Enviar">
+                </div>
+
+
+                </form>
+              </section>
+
+              <section>       
+                <table class="table text-center table-hover container-fluid">
+                <thead>
+                  <tr>
+                    <th scope="col">Envase</th>
+                    <th scope="col">Mililitros</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Aromas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr>
+                    <th scope="row">Bombe sin tapa</th>
+                    <td>275ml</td>
+                    <td>750$</td>
+                    <td>Gardenias - Papaya</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">Dubai bombe</th>
+                    <td>200ml</td>
+                    <td>710$</td>
+                    <td>Vainilla - Pera y Flores blancas</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">Acanalado</th>
+                    <td>200ml</td>
+                    <td>900$</td>
+                    <td>Coco - Coco y Vainilla</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">Caramelera N-4</th>
+                    <td>100ml</td>
+                    <td>950$</td>
+                    <td>Miel y limon - Naranja y Pimienta</td>
+                  </tr>
+                    
+                  <tr>
+                    <th scope="row">Conico Chico</th>
+                    <td>95ml</td>
+                    <td>450$</td>
+                    <td>Lavanda - Flores blancas</td>
+                  </tr>
+    
+                  <tr>
+                    <th scope="row">Concreto Chico</th>
+                    <td>50ml</td>
+                    <td>350$</td>
+                    <td>Jazmin - Manzana y Canela</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+              <form action="" method="" enctype="">
+                <div class="container">
+                <div class="row">
+                    <label for="">Tipo de envase</label>
+                    <input type="text">
+                </div>
+    
+                <div class="row">
+                    <label for="">Aroma deseado</label>
+                    <input type="text">
+                </div>
+    
+                <div class="row">
+                <input type="button" value="enviar">
+                </div>
+              </div>
+    
+            </form>
+    
+            <h4>Envase y Aromas, a eleccion del consumidor</h4></section>
         </main> 
         
         <footer>
