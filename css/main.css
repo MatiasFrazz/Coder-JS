@@ -1,0 +1,27 @@
+nav {
+  font-size: medium;
+  font-weight: 750;
+  font-variant: small-caps; }
+  nav ul {
+    list-style-type: none; }
+
+    footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+  /* Estilado index */
+.hVel {
+  padding-top: 25px; }
+
+.vel-uno {
+  background-color: rgba(137, 43, 226, 0.35);
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
+  padding: 55px 50px 55px 50px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: large; }
