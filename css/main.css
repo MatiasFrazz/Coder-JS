@@ -12,25 +12,43 @@ footer {
   align-items: center; 
 }
 
-  /* Estilado index */
-.hVel {
-  background-color: rgba(52, 52, 255, 0.815);
+/* Estilado index */
+.card{
+  background-color: whitesmoke;
+
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+
+  border: 5px black double;
+}
+
+header {
+background-image: url("../img/fondo-arg.jpg");
+background-position: center;
+background-size: contain;
+background-attachment: fixed;
 
   display: flex;
   justify-content: center; 
 }
 
-.vel-uno {
-  background-color: whitesmoke;
+.hVel{
+  font-weight: 900;
+  font-style: oblique;
+}
 
+.vel-uno {
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 2fr;
-  padding: 55px 50px 55px 50px;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  font-size: large; }
+ }
+
 
   
   /* MediaQueries */
@@ -41,9 +59,7 @@ footer {
     flex-wrap: wrap;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr;
-    padding: 75px 50px 75px 50px; }
-      /* .card {
-        border: 5px double white; } */
+    padding: 75px 40px 75px 85px; }
   }
 
   @media screen and (min-width: 1024px) {
