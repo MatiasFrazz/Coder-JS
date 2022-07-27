@@ -1,22 +1,28 @@
-nav {
-  font-size: medium;
-  font-weight: 750;
-  font-variant: small-caps; }
-  nav ul {
-    list-style-type: none; }
-
-    footer {
+body{
+  margin: 0;
+  padding: 0;
+}
+  
+footer {
+  background-color: rgba(52, 52, 255, 0.815);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center; 
+}
 
   /* Estilado index */
 .hVel {
-  padding-top: 25px; }
+  background-color: rgba(52, 52, 255, 0.815);
+
+  display: flex;
+  justify-content: center; 
+}
 
 .vel-uno {
-  background-color: rgba(137, 43, 226, 0.35);
+  background-color: whitesmoke;
+
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 2fr;
@@ -25,3 +31,27 @@ nav {
   justify-content: space-between;
   text-align: center;
   font-size: large; }
+
+  
+  /* MediaQueries */
+  
+@media screen and (min-width: 768px) {
+  .vel-uno {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 2fr;
+    padding: 75px 50px 75px 50px; }
+      /* .card {
+        border: 5px double white; } */
+  }
+
+  @media screen and (min-width: 1024px) {
+  .vel-uno {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr;
+    grid-gap: 50px;
+    text-align: center;
+    font-size: large; } 
+  }
