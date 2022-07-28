@@ -1,9 +1,11 @@
 
 class Cliente {
-    constructor(nombre, localidad, codigoPostal) {
+    constructor(nombre, localidad, codigoPostal, envase, aroma) {
         this.nombre = nombre;
         this.localidad = localidad;
         this.codigoPostal = codigoPostal;
+        this.envase = envase;
+        this.aroma = aroma;
     }
 }
 
@@ -13,8 +15,10 @@ const datosCliente = ()=>{
     let nombre = document.getElementById("nombre").value;
     let localidad = document.getElementById("localidad").value;
     let codigoPostal = document.getElementById("codigoPostal").value;
+    let envase = document.getElementById("envase").value;
+    let aroma = document.getElementById("aroma").value;
 
-    let clienteNuevo = new Cliente (nombre, localidad, codigoPostal);
+    let clienteNuevo = new Cliente (nombre, localidad, codigoPostal, envase, aroma);
 
     if (localStorage.getItem("clientes") == null) {
         infoClientes.push(clienteNuevo);

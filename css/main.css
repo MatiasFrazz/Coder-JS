@@ -55,7 +55,17 @@ header {
   grid-template-rows: 2fr;
  }
 
+ /* Tabla */
 
+ .tablep {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  border: 5px double;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  font-weight: 600;
+  font-style: oblique; }
   
   /* MediaQueries */
   
