@@ -41,4 +41,18 @@ function formularioCompleto(e){
     console.log(datosCliente())
 }
 
+let productos = []; 
+let total = 0;
+
+function agregar (producto, precio) {
+    console.log (producto, precio);
+    productos.push(producto);
+    total = total + precio;
+    document.getElementById("chekout").innerHTML = `Pagar $${total}` 
+}
+
+function pagar () {
+    console.log(producto, precio)
+    window.alert(producto.join(", \n"))
+}
 

@@ -18,55 +18,63 @@
 </head>
 <body>
             <header>
-              <div class="row">
-            <h1 class="hVel" style="color: white;">Productos</h1>
-              </div> 
+              <div>
+            <h1 class="hVel">Mi Tienda - ARGIAOKK</h1>
+          </div>
+          <div>
+            <button id="checkout" class="boton-carrito" onclick="pagar()">Carrito</button>
+          </div>
+
           </header> 
           
         <main>
+
+            <h3 class="hMain" style="color: white;">Productos</h3>
+
           <section class="vel-uno">
             <div class="card" style="width: 17rem;">
-              <img src="img/acero.jpg" class="img-fluid" alt="acero">
+              <img src="img/acero.jpg" class="velCard" alt="acero">
               <h2>Bombe sin Tapa</h2>
                 <h3>Envase de acero, 275ml</h3>
-                <button class="btnProductos">Agregar al carrito</button>
+                <button class="btnProductos" onclick="agregar('acero' , 750)">Agregar al carrito</button>
             </div>
-    
+            
             <div class="card" style="width: 17rem;">
-              <img src="img/dorada.jpg" class="img-fluid" alt="dorada">
+              <img src="img/vidrio.jpg" class="velCard"  alt="vidrio">
+              <h2>Dubai Bombe</h2>
+                <h3>Copon de vidrio, 230ml</h3>
+                <button class="btnProductos" onclick="agregar('vidrio' , 900)">Agregar al carrito</button>
+            </div>
+
+            <div class="card" style="width: 17rem;">
+              <img src="img/dorada.jpg" class="velCard" alt="dorada">
               <h2>Acanalado</h2>
                 <h3>Lata acanalada, 200ml</h3>
-                <button class="btnProductos">Agregar al carrito</button>
+                <button class="btnProductos" onclick="agregar('dorada' , 710)">Agregar al carrito</button>
               </div>
               
-              <div class="card" style="width: 17rem;">
-                <img src="img/vidrio.jpg" class="img-fluid"  alt="vidrio">
-                <h2>Dubai Bombe</h2>
-                  <h3>Copon de vidrio, 200ml</h3>
-                  <button class="btnProductos">Agregar al carrito</button>
-              </div>
                   
                 <div class="card" style="width: 17rem;">
-                  <img src="img/vid-deco.jpg" class="img-fluid"  alt="vid-deco">
+                  <img src="img/vid-deco.jpg" class="velCard"  alt="vid-deco">
                   <h2>Caramelera N-4</h2>
                       <h3>Envase de vidrio decorado, 100ml</h3>
-                      <button class="btnProductos">Agregar al carrito</button>
+                      <button class="btnProductos" onclick="agregar('vid-deco' , 950)">Agregar al carrito</button>
                 </div>
 
               <div class="card" style="width: 17rem;">
-                <img src="img/rosa.jpg" class="img-fluid"  alt="rosa">
+                <img src="img/rosa.jpg" class="velCard"  alt="rosa">
                 <h2>Conico Chico</h2>
                   <h3>Envase de metal conico, 95ml</h3>
-                  <button class="btnProductos">Agregar al carrito</button>
+                  <button class="btnProductos" onclick="agregar('rosa' , 450)">Agregar al carrito</button>
               </div>
 
 
 
                 <div class="card" style="width: 17rem;">
-                    <img src="img/multicolor.jpg" class="img-fluid"  alt="multicolor">
+                    <img src="img/multicolor.jpg" class="velCard"  alt="multicolor">
                     <h2>Concreto</h2>
                     <h3>Concreto chico multicolor, 50ml</h3>
-                    <button class="btnProductos">Agregar al carrito</button>
+                    <button class="btnProductos" onclick="agregar('multicolor' , 350)">Agregar al carrito</button>
                 </div>
               </section>
 
@@ -88,16 +96,17 @@
                   </tr>
                   
                   <tr>
+                    <td>230ml</td>
+                    <td>900$</td>
+                    <td>Coco - Coco y Vainilla</td>
+                  </tr>
+
+                  <tr>
                     <td>200ml</td>
                     <td>710$</td>
                     <td>Vainilla - Pera y Flores blancas</td>
                   </tr>
                   
-                  <tr>
-                    <td>200ml</td>
-                    <td>900$</td>
-                    <td>Coco - Coco y Vainilla</td>
-                  </tr>
                   
                   <tr>
                     <td>100ml</td>
@@ -121,11 +130,6 @@
             
               <section>
                 <form id="formCliente" action="">
-                  <div>
-                    <label for="">Tipo de envase</label>
-                    <input type="text" id="envase">
-                  </div>
-                  
                   <div>
                     <label for="">Aroma deseado</label>
                     <input type="text" id="aroma">
@@ -151,7 +155,7 @@
                   <input type="submit" value="Enviar">
                 </div>
 
-                <h4>Envase y Aromas, a eleccion del consumidor</h4></section>
+                <h4>Aromas a eleccion del consumidor</h4></section>
 
                 </form>
               </section>
@@ -165,11 +169,11 @@
             </a>
         </footer>  
         
-<script src="js/main.js"></script>
-
+        
 <!-- Link bootstrap Js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
 
 
+<script src="js/main.js"></script>
   </body>
 </html>

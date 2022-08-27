@@ -1,4 +1,10 @@
 body{
+  background-image: url("../img/fondo-arg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   margin: 0;
   padding: 0;
 }
@@ -15,14 +21,32 @@ footer {
 /* Estilado index */
 
 header {
-  background-image: url("../img/fondo-arg.jpg");
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
-  
+  background-color: rgba(52, 52, 255, 0.815);
+
   display: flex;
-  justify-content: center; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.boton-carrito{
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 750;
+}
+
+.hMain{
+  display: flex;
+
+  margin-top: 25px;
+  justify-content: center;
+
+  font-weight: 800;
+  font-variant: small-caps;
+}
+
 .card{
   background-color: whitesmoke;
 
@@ -35,13 +59,27 @@ header {
   text-align: center;
   font-size: medium;
 
-  border: 5px black double;
+  border: solid 3px black;
+  border-radius: 15px;
+}
+
+.velCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btnProductos{
-  background-color: green;
+  background-color: bisque;
+
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  text-decoration: none;
   font-size: medium;
-  font-weight: 900;
+  font-weight: 750;
+}
+
+.btnProductos:hover{
+  background-color: green;
+  color: white;
 }
 
 .hVel{
